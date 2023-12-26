@@ -69,6 +69,10 @@ public class Bernoulli extends MathLibrary {
         return this.q + (this.p * euler(t));
     }
 
+    double PGF(double z) {
+        return q + (p * z);
+    }
+
     double FisherInformation() {
         return 1.0 / (this.p * this.q);
     }

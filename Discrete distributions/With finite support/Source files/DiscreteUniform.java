@@ -15,6 +15,7 @@ public class DiscreteUniform extends MathLibrary {
     }
 
     double CDF(int k) {
+        if (k < a || k > b) throw new IllegalArgumentException("a <= k <= b");
         return (double) (k - a + 1) / n;
     }
 
@@ -43,15 +44,15 @@ public class DiscreteUniform extends MathLibrary {
     }
 
     double MGF(double t) {
-        double licznik = euler(a * t) - euler((b + 1) * t);
-        double mianownik = n * (1 - euler(t));
-        return licznik / mianownik;
+        double part1 = euler(a * t) - euler((b + 1) * t);
+        double part2 = n * (1 - euler(t));
+        return part1 / part2;
     }
 
     double PGF(double z) {
-        double licznik = power(z, a) - power(z, b + 1);
-        double mianownik = n * (1 - z);
-        return licznik / mianownik;
+        double part1 = power(z, a) - power(z, b + 1);
+        double part2 = n * (1 - z);
+        return part1 / part2;
     }
 }
 

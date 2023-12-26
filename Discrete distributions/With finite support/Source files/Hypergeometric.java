@@ -16,6 +16,15 @@ public class Hypergeometric extends MathLibrary{
         return (binomial(K, k) * binomial(N - K, n - k)) / binomial(N, n);
     }
 
+    double CDF(int k) {
+        if (k < max(0, n + K - N) || k > min(n, K)) throw new IllegalArgumentException("max(0, n + K - N) <= k <= min(n , K)");
+        double value = 0;
+        for (int i = 0; i < k; i++) {
+            value += binomial(K, i) * binomial(N - K, n - i) / binomial(N, n);
+        }
+        return value;
+    }
+
     double Mean() {
         return n * ((double) K / N);
     }
