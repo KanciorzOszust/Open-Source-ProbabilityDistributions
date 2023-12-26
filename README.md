@@ -7,7 +7,7 @@
 You can find any info for example graphs at (https://en.wikipedia.org/wiki/List_of_probability_distributions)
 
 Distributions have (not always):
-* PDF (Probability Density Function)
+* PDF (Probability Density Function) or PMF (Probability mass function)
 * CDF (Cumulative distribution function)
 * Quantile (**rarely**)
 * Mean
