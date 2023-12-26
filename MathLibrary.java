@@ -183,12 +183,15 @@ public class MathLibrary {
     }
 
     protected double pochhammer(double x, int n) {
-        double value = 1;
-        for (int i = 0; i < n - 1; i++) {
-            if (x + i == 0) value *= 1;
-            else value *= x + i;
+        if (n == 0) {
+            return 1;
+        } else {
+            double result = x;
+            for (int i = 1; i < n; i++) {
+                result *= (x + i);
+            }
+            return result;
         }
-        return value;
     }
 
     protected double gamma(double x) {
@@ -311,6 +314,14 @@ public class MathLibrary {
         return value;
     }
 
+    protected double parameterHarmonicNumber(int n, double x, double m) {
+        double value = 0;
+        for (int i = 1; i < n; i++) {
+            value += 1 / doublePower(1 + x, m);
+        }
+        return value;
+    }
+
     protected double logit(double x) {
         return ln(x / (1 - x));
     }
@@ -361,11 +372,13 @@ public class MathLibrary {
     }
 
     protected double hypergeometric(double a, double b, double c, double z) {
-        double value = 0;
-        for (int i = 0; i < 20; i++) {
-            value += ((pochhammer(a, i) * pochhammer(b, i)) / pochhammer(c, i)) * (power(z, i) / factorial(i));
+        double sum = 1.0;
+        double term = 1.0;
+        for (int n = 1; Math.abs(term) > 1e-10; n++) {
+            term *= ((a + n - 1) / n) * (b / (c + n - 1)) * z;
+            sum += term;
         }
-        return value;
+        return sum;
     }
 
     protected double exponentialIntergral(double x) {
