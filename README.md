@@ -2,6 +2,8 @@
 
 **Probability Distributions** is a java implementation of probability distributions with open source code and own Math Library with functions required to these distributions
 
+You can find any info for example graphs at (https://en.wikipedia.org/wiki/List_of_probability_distributions)
+
 Distributions have (not always):
 * PDF (Probability Density Function)
 * CDF (Cumulative distribution function)
