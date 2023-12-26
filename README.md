@@ -1,6 +1,7 @@
 *version 1.0*
 
 **Probability Distributions** is a java implementation of probability distributions with open source code and own Math Library with functions required to these distributions
+
 Distributions have (not always):
 * PDF (Probability Density Function)
 * CDF (Cumulative distribution function)
