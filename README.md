@@ -78,7 +78,7 @@ If you find any bug let me know at (jasiekpojda@gmail.com)
 * Wrapped Cauchy
 * Wrapped Exponential
 * Wrapped Normal
-#### Supported on semi-infinite intervals
+### Supported on semi-infinite intervals
 * Beta Prime
 * Chi
 * Chi Squared
