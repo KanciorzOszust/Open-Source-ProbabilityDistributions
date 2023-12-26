@@ -2,6 +2,8 @@
 
 **Probability Distributions** is a java implementation of probability distributions with open source code and own Math Library with functions required to these distributions
 
+**Every class require MathLibrary class in the same catalog (just copy it and paste it to the catalog you're working in)**
+
 You can find any info for example graphs at (https://en.wikipedia.org/wiki/List_of_probability_distributions)
 
 Distributions have (not always):
@@ -21,9 +23,7 @@ Distributions have (not always):
 * Kullback-Leibler divergence (**rarely**)
 * Expected shortfall (**rarely**)
 
-(*Note every class require MathLibrary class in the same catalog*)
-
-(*Note2 it isn't perfect, distributions can have some errors and imperfections mostly Joint Distributions*)
+(*Note: it isn't perfect, distributions can have some errors and imperfections mostly Joint Distributions*)
 
 If you find any bug or if you want to ask some questions write at (jasiekpojda@gmail.com)
 
