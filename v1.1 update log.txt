@@ -1,0 +1,13 @@
+What's new:
+* added Bernoulli.PGF(double z)
+* added argument limitation at BetaBinominal.PMF(int x)
+* added BetaBinomial.MGF(double t)
+* added BetaBinomial.PGF(double z)
+* added BetaBinomial.CDF(int x)
+* added argument limitation at DiscreteUniform.CDF(int k)
+* added Hypergeometric.CDF(int k)
+* added parameterHarmonicNumber(int n, double x, double m) in MathLibrary
+* added ZipfMandelbrot at Discrete distributions -> With finite support
+
+Bug fixed:
+* repaired MathLibrary.hypergeometric(double a, double b, double c, double z);
