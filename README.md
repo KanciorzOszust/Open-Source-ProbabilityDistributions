@@ -1,4 +1,4 @@
-*version 1.0*
+*version 1.1*
 
 **Probability Distributions** is a java implementation of probability distributions with open source code and own Math Library with functions required to these distributions
 
@@ -22,6 +22,7 @@ Distributions have (not always):
 * Fisher information (**rarely**)
 * Kullback-Leibler divergence (**rarely**)
 * Expected shortfall (**rarely**)
+* PGF(Probability-generating function) (**rarely**)
 
 (*Note: it isn't perfect, distributions can have some errors and imperfections mostly Joint Distributions*)
 
@@ -41,6 +42,7 @@ If you find any bug or if you want to ask some questions write at (jasiekpojda@g
 * Negative Hypergeometric
 * Rademacher
 * Zipf
+* ZipfMandelbrot
 ### With infinite support
 * Beta Negative Binomial
 * Borel
