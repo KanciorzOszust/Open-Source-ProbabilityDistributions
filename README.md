@@ -25,7 +25,7 @@ Distributions have (not always):
 
 (*Note2 it isn't perfect, distributions can have some errors and imperfections mostly Joint Distributions*)
 
-If you find any bug let me know at (jasiekpojda@gmail.com)
+If you find any bug or if you want to ask some questions write at (jasiekpojda@gmail.com)
 
 # PROBABILITY DISTRIBUTIONS
 
