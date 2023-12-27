@@ -1,4 +1,4 @@
-*version 1.1*
+*version 1.2*
 
 **Probability Distributions** is a java implementation of probability distributions with open source code and own Math Library with functions required to these distributions
 
@@ -32,6 +32,7 @@ If you find any bug or if you want to ask some questions write at (jasiekpojda@g
 
 ## Discrete
 ### With finite suppor
+* Benford
 * Bernoulli
 * Beta Binomial
 * Binomial
@@ -41,6 +42,7 @@ If you find any bug or if you want to ask some questions write at (jasiekpojda@g
 * Hypergeometric
 * Negative Hypergeometric
 * Rademacher
+* Univariate Wallenius Noncentral Hypergeometric
 * Zipf
 * ZipfMandelbrot
 ### With infinite support
@@ -148,6 +150,8 @@ If you find any bug or if you want to ask some questions write at (jasiekpojda@g
 * Dirichlet
 * Dirichlet Negative Multinomial
 * Multinomial
+* Multivariate Fishers Noncentral Hypergeometric
+* Multivariate Hypergeometric
 * Multivariate Normal
 * Multivariate T
 * Negative Multinomial
