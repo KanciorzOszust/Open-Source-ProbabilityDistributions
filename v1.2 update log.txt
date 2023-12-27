@@ -1,0 +1,8 @@
+What's new:
+* added MultivariateHypergeometric at Joint -> Two ore more random variable on the same sample space
+* addded MultivariateFishersNoncentralHypergeometric at Joint -> Two ore more random variable on the same sample space
+* added UnivariateWalleniusNoncentralHypergeometric at Discrete -> With finite support
+* added Benford at Discrete -> With finite support
+Bug fixed:
+* repaired MathLibrary.incompleteBeta(double a, double b, double z);
+* repaired MaxwellBoltzmann.Entropy()
