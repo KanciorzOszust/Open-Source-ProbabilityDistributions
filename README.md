@@ -34,7 +34,7 @@ If you find any bug or if you want to ask some questions write at (jasiekpojda@g
 ### With finite suppor
 * Benford
 * Bernoulli
-* Beta Binomial
+* Beta-Binomial
 * Binomial
 * Degenerate
 * Discrete Uniform
@@ -44,21 +44,21 @@ If you find any bug or if you want to ask some questions write at (jasiekpojda@g
 * Rademacher
 * Univariate Wallenius Noncentral Hypergeometric
 * Zipf
-* ZipfMandelbrot
+* Zipf-Mandelbrot
 ### With infinite support
 * Beta Negative Binomial
 * Borel
-* Conway Maxwell Poisson
-* Gauss Kuzmin
+* Conway-Maxwell-Poisson
+* Gauss-Kuzmin
 * Geometric
 * Hardy
 * Hermite
 * Logarithmic
-* Maxwell Boltzmann
+* Maxwell-Boltzmann
 * Negative Binomial
 * Poisson
 * Skellam
-* Yule Simon
+* Yule-Simon
 * Zeta
 
 ## Absolutely continuous 
@@ -67,7 +67,7 @@ If you find any bug or if you want to ask some questions write at (jasiekpojda@g
 * Bates
 * Beta
 * Continuous Bernoulli
-* Irwin Hall
+* Irwin-Hall
 * Kumaraswamy
 * Logit Normal
 * Raised Cosine
@@ -87,7 +87,7 @@ If you find any bug or if you want to ask some questions write at (jasiekpojda@g
 ### Supported on semi-infinite intervals
 * Beta Prime
 * Chi
-* Chi Squared
+* Chi-Squared
 * Dagum
 * Erlang
 * Exponential
@@ -101,23 +101,23 @@ If you find any bug or if you want to ask some questions write at (jasiekpojda@g
 * Generalized Pareto
 * Gompertz
 * Half Normal
-* Inverse Chi Squared
-* Inverse Gamma
+* Inverse-Chi-Squared
+* Inverse-Gamma
 * Inverse Gaussian
 * Levy
-* Log Cauchy
-* Log Logistic
+* Log-Cauchy
+* Log-Logistic
 * Logmax
-* Log Normal
+* Log-Normal
 * Nakagami
 * Noncentral Chi
-* Noncentral Chi Squared
+* Noncentral Chi-Squared
 * Pareto
 * Rayleigh
 * Rice
-* Scaled Inverse Chi Squared
+* Scaled Inverse Chi-Squared
 * Shifted Gompertz
-* Type 2 Gumbel
+* Type-2 Gumbel
 * Weibull
 ### Supported on the whole real line
 * Cauchy
@@ -134,11 +134,11 @@ If you find any bug or if you want to ask some questions write at (jasiekpojda@g
 * Laplace
 * Logistic
 * Normal
-* Normal Exponential Gamma
-* Normal Inverse Gaussian
+* Normal-Exponential-Gamma
+* Normal-Inverse Gaussian
 * Stable
 * Student's T
-* Type 1 Gumbel
+* Type-1 Gumbel
 ### With variable support
 * Generalized Extreme Value
 * Generalized Pareto
@@ -146,7 +146,7 @@ If you find any bug or if you want to ask some questions write at (jasiekpojda@g
 * Wakeby
 ## Joint
 ### Two or more random variable on the same sample space
-* Balding Nochols
+* Balding-Nochols
 * Dirichlet
 * Dirichlet Negative Multinomial
 * Multinomial
