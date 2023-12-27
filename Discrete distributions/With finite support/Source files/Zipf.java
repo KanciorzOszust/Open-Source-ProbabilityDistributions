@@ -32,18 +32,18 @@ public class Zipf extends MathLibrary{
     }
 
     double Entropy(int k) {
-        double wartosc = s / generalizedHarmonicNumber(N, s);
+        double value = s / generalizedHarmonicNumber(N, s);
         for (int i = 1; i < N; i++) {
-            wartosc += ln(k) / doublePower(k, s);
+            value += ln(k) / doublePower(k, s);
         }
-        return wartosc + ln(generalizedHarmonicNumber(N, s));
+        return value + ln(generalizedHarmonicNumber(N, s));
     }
 
     double MGF(double t) {
-        double wartosc = 1.0 / generalizedHarmonicNumber(N, s);
+        double value = 1.0 / generalizedHarmonicNumber(N, s);
         for (int i = 1; i < N; i++) {
-            wartosc += euler(i * t) / doublePower(i, s);
+            value += euler(i * t) / doublePower(i, s);
         }
-        return wartosc;
+        return value;
     }
 }

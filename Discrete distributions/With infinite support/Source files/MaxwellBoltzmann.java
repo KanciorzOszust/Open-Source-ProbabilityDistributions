@@ -37,6 +37,6 @@ public class MaxwellBoltzmann extends MathLibrary {
     }
 
     double Entropy() {
-        return ln(a * root(2 * PI, 2)) + Variance() + Skewness() - 0.5;
+        return ln(a * root(2 * PI, 2)) + EulerMascheroni - 0.5;
     }
 }

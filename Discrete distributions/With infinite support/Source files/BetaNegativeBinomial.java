@@ -28,9 +28,9 @@ public class BetaNegativeBinomial extends MathLibrary {
 
     double Variance() {
         if (alpha > 2) {
-            double licznik = r * beta * (r + alpha - 1) * (beta + alpha - 1);
-            double mianownik = (alpha - 2) * power(alpha - 1, 2);
-            return licznik / mianownik;
+            double part1 = r * beta * (r + alpha - 1) * (beta + alpha - 1);
+            double part2 = (alpha - 2) * power(alpha - 1, 2);
+            return part1 / part2;
         } else {
             return Double.POSITIVE_INFINITY;
         }
@@ -38,10 +38,10 @@ public class BetaNegativeBinomial extends MathLibrary {
 
     double Skewness() {
         if (alpha > 3) {
-            double licznik = (2 * r + alpha - 1) * (2 + beta + alpha - 1);
-            double licznik2 = r * beta * (r + alpha - 1) * (beta + alpha - 1);
-            double mianownik = (alpha - 3) * root(licznik2 / (alpha - 2), 2);
-            return licznik / mianownik;
+            double part1 = (2 * r + alpha - 1) * (2 + beta + alpha - 1);
+            double part2 = r * beta * (r + alpha - 1) * (beta + alpha - 1);
+            double part3 = (alpha - 3) * root(part2 / (alpha - 2), 2);
+            return part1 / part3;
         } else {
             return Double.POSITIVE_INFINITY;
         }

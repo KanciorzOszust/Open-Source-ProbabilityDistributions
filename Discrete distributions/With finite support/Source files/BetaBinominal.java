@@ -31,17 +31,17 @@ public class BetaBinominal extends MathLibrary {
     }
 
     double Variance() {
-        double licznik = n * alpha * beta * (alpha + beta + n);
-        double mianownik = power(alpha + beta, 2) * (alpha + beta + 1);
-        return licznik / mianownik;
+        double part1 = n * alpha * beta * (alpha + beta + n);
+        double part2 = power(alpha + beta, 2) * (alpha + beta + 1);
+        return part1 / part2;
     }
 
     double Skewness() {
-        double licznik1 = (alpha + beta + (2 * n)) * (beta - alpha);
-        double wartosc1 = licznik1 / (alpha + beta + 2);
-        double mianownik2 = n * alpha * beta * (n + alpha + beta);
-        double wartosc2 = root((1 * alpha * beta) / mianownik2, 2);
-        return wartosc1 * wartosc2;
+        double part1 = (alpha + beta + (2 * n)) * (beta - alpha);
+        double value1 = part1 / (alpha + beta + 2);
+        double part2 = n * alpha * beta * (n + alpha + beta);
+        double value2 = root((1 * alpha * beta) / part2, 2);
+        return value1 * value2;
     }
 
     double MGF(double t) {

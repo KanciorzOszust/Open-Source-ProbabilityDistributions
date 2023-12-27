@@ -2,6 +2,10 @@ public class MathLibrary {
     protected double PI = 3.1415;
     protected double EulerMascheroni = 0.5772;
 
+    MathLibrary() {
+        System.out.println(incompleteBeta(6, 6, 0.5));
+    }
+
     protected int round(double x) {
         if (x - (int) x < 0.5) {
             return (int) x;
@@ -75,8 +79,8 @@ public class MathLibrary {
         return 2 * result;
     }
 
-    protected double log(double x, int podstawa) {
-        return ln(x) / ln(podstawa);
+    protected double log(double x, int base) {
+        return ln(x) / ln(base);
     }
 
     protected double polylogarithm(double x, double s) {
@@ -245,12 +249,7 @@ public class MathLibrary {
     }
 
     protected double incompleteBeta(double a, double b, double z) {
-        double value = 0;
-        for (int i = 0; i < 10; i++) {
-            System.out.println(pochhammer(1 - b, i));
-            value += pochhammer(1 - b, i) / (factorial(i) * (a + i)) * power(z, i);
-        }
-        return doublePower(z, a) * value;
+        return (doublePower(z, a) / a) * hypergeometric(a, 1 - b, a + 1, z);
     }
 
     protected double regularizedIncompleteBeta(double a, double b, double z) {
@@ -372,11 +371,9 @@ public class MathLibrary {
     }
 
     protected double hypergeometric(double a, double b, double c, double z) {
-        double sum = 1.0;
-        double term = 1.0;
-        for (int n = 1; Math.abs(term) > 1e-10; n++) {
-            term *= ((a + n - 1) / n) * (b / (c + n - 1)) * z;
-            sum += term;
+        double sum = 0;
+        for (int i = 0; i < 20; i++) {
+            sum += pochhammer(a, i) * pochhammer(b, i) / pochhammer(c, i) * (power(z, i) / factorial(i));
         }
         return sum;
     }
