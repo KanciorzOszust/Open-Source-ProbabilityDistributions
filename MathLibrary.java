@@ -2,10 +2,6 @@ public class MathLibrary {
     protected double PI = 3.1415;
     protected double EulerMascheroni = 0.5772;
 
-    MathLibrary() {
-        System.out.println(incompleteBeta(6, 6, 0.5));
-    }
-
     protected int round(double x) {
         if (x - (int) x < 0.5) {
             return (int) x;
@@ -14,7 +10,7 @@ public class MathLibrary {
         }
     }
 
-    protected double absolute(double value) { // zwraca wartość bezwzgęldną z liczby
+    protected double absolute(double value) {
         if (value >= 0) {
             return value;
         } else {
@@ -71,7 +67,7 @@ public class MathLibrary {
         double term2 = term * term;
         double result = term;
         int i = 1;
-        while (absolute(term) > 1e-10) { // precision of 10 decimal places
+        while (absolute(term) > 1e-10) {
             term *= term2;
             i += 2;
             result += term / i;
